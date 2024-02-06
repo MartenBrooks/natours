@@ -15,7 +15,7 @@
     backface-visibility: hidden;
     overflow: hidden;
 
-    border-radius: 3px;
+    border-radius: $radius-sm;
     box-shadow: $shadow-lg;
 
     &--front {
@@ -25,10 +25,10 @@
     &--back {
       transform: rotateY(180deg);
       &--1 {
-        background-image: $gradient-primary;
+        background-image: $gradient-secondary;
       }
       &--2 {
-        background-image: $gradient-secondary;
+        background-image: $gradient-primary;
       }
       &--3 {
         background-image: $gradient-tertiary;
@@ -53,10 +53,10 @@
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     &--1 {
-      background-image: $gradient-primary, url(../img/nat-5.jpg);
+      background-image: $gradient-secondary, url(../img/nat-5.jpg);
     }
     &--2 {
-      background-image: $gradient-secondary, url(../img/nat-6.jpg);
+      background-image: $gradient-primary, url(../img/nat-6.jpg);
     }
     &--3 {
       background-image: $gradient-tertiary, url(../img/nat-7.jpg);

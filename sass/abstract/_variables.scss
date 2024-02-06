@@ -19,13 +19,13 @@ $color-black: #000;
 //GRADIENTS
 $gradient-primary: linear-gradient(
   to right bottom,
-  $color-secondary-light,
-  $color-secondary-dark
+  $color-primary-light,
+  $color-primary-dark
 );
 $gradient-secondary: linear-gradient(
   to right bottom,
-  $color-primary-light,
-  $color-primary-dark
+  $color-secondary-light,
+  $color-secondary-dark
 );
 $gradient-tertiary: linear-gradient(
   to right bottom,
@@ -34,14 +34,16 @@ $gradient-tertiary: linear-gradient(
 );
 
 //FONT
-
 $default-font-size: 1.6rem;
 
 //SHADOW
-
 $shadow-sm: 0 0.5rem 1rem rgba($color-black, 0.15);
 $shadow-md: 0 1rem 2rem rgba($color-black, 0.15);
 $shadow-lg: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+//BORDER-RADIUS
+$radius-sm: 3px;
+$radius-lg: 10rem;
 
 //GRID
 $grid-width: 114rem;
