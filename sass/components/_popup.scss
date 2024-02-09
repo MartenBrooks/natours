@@ -27,6 +27,9 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.3s 0.2s;
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 
   &:target &__content {
@@ -36,10 +39,19 @@
   &__left {
     width: 33.3333333%;
     display: table-cell;
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
   }
   &__image {
     width: 100%;
     display: block;
+    @include respond(tab-land) {
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
   }
 
   &__right {
@@ -47,6 +59,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__text {
@@ -60,6 +76,12 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+    @include respond(phone) {
+      columns: 1;
+      max-height: 40vh;
+      overflow: hidden; /* Don't forget this one */
+      text-overflow: ellipsis;
+    }
   }
 
   &__close {
