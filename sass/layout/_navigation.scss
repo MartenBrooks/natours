@@ -14,7 +14,7 @@
     background-color: $color-white;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     cursor: pointer;
-
+    text-align: center;
     @include respond(tab-land) {
       top: 3rem;
       right: 3rem;
@@ -113,9 +113,7 @@
   //ICON
   &__icon {
     position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 3.5rem;
 
     &,
     &::before,

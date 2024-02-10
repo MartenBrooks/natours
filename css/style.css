@@ -805,7 +805,8 @@ body {
   z-index: 1000;
   background-color: #fff;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
   @media (max-width: 75em) {
     .navigation__button {
       top: 3rem;
@@ -882,9 +883,7 @@ body {
 
 .navigation__icon {
   position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
+  margin-top: 3.5rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
